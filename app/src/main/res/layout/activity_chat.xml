@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context="com.ainifathiha.give.ChatActivity"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="359dp"
+            android:layout_weight="0.97">
+
+            <ListView
+                android:id="@+id/list_of_message"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:dividerHeight="16dp"
+                android:divider="@android:color/transparent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="200dp"
+                android:layout_height="67dp"
+                android:layout_below="@+id/list_of_message"
+                android:layout_toLeftOf="@+id/fab"
+                android:layout_weight="0.99">
+
+                <EditText
+                    android:id="@+id/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:hint="Message ..."
+                    android:textColorHint="@android:color/holo_orange_light"
+                    android:textColorLink="@android:color/holo_orange_light" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:tint="@android:color/white"
+                app:backgroundTint="@android:color/holo_orange_light"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_send" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibHome"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/icon_home"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="412dp" />
+
+            <ImageButton
+                android:id="@+id/ibSearch"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/icon_search"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="71dp"
+                tools:layout_editor_absoluteY="412dp"
+                android:layout_weight="0.52" />
+
+            <ImageButton
+                android:id="@+id/ibCamera"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/icon_camera"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="141dp"
+                tools:layout_editor_absoluteY="412dp"
+                android:layout_weight="0.52" />
+
+            <ImageButton
+                android:id="@+id/ibChat"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/icon_chat"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="212dp"
+                tools:layout_editor_absoluteY="412dp"
+                android:layout_weight="0.10" />
+
+            <ImageButton
+                android:id="@+id/ibProfile"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:background="@drawable/icon_account"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="281dp"
+                tools:layout_editor_absoluteY="412dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

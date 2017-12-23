@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Give</string>
+    <string name="facebook_application_id" translatable="false">645635018961721</string>
+    <string name="chat">CHAT</string>
+    <string name="message">Message ...</string>
+    <array name="category">
+        <item>Books</item>
+        <item>Stationery</item>
+        <item>Clothing</item>
+        <item>Health And Beauty</item>
+        <item>Electronics And Gadgets</item>
+        <item>Cooking Utensils</item>
+    </array>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ainifathiha.give.MainActivity">
+
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/ivGiveLogo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/givelogo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/blFacebook"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:background="@drawable/fb"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="184dp" />
+
+            <Button
+                android:id="@+id/bFacebook"
+                android:layout_width="278dp"
+                android:layout_height="55dp"
+                android:layout_gravity="right"
+                android:text="Continue with facebook"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:visibility="visible"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="29dp"
+                tools:layout_editor_absoluteY="184dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/blGoogle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:background="@drawable/google"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="49dp"
+                tools:layout_editor_absoluteY="268dp" />
+
+            <Button
+                android:id="@+id/bGoogle"
+                android:layout_width="278dp"
+                android:layout_height="55dp"
+                android:layout_gravity="right"
+                android:foreground="@android:color/transparent"
+                android:text="Continue with google"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="268dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/blEmail"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:background="@drawable/mail"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="49dp"
+                tools:layout_editor_absoluteY="405dp" />
+
+            <Button
+                android:id="@+id/bEmail"
+                android:layout_width="278dp"
+                android:layout_height="55dp"
+                android:layout_gravity="right"
+                android:foreground="@android:color/transparent"
+                android:text="Continue with email"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="268dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
